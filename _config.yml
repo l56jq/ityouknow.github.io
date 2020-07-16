@@ -6,12 +6,12 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title:  清纯的老卷
+title:  老邢
 subtitle: 总结提炼，自我修炼
-name: 清纯的老卷
+name: 老邢冲鸭
 email: l56jq@163.com
 description: 本站旨在自我技术积累。
-keywords: l56jq,清纯的老卷,Java,Node.js,Docker,K8S,Spring Boot
+keywords: l56jq,老邢,我真的很帅呀,Java,Node.js,Docker,K8S,Spring Boot
 encoding: "utf-8"
 favicon: favicon.ico
 
@@ -189,16 +189,14 @@ labels:
 
 # selected articles
 classes:
-
-#  -
-#    href: /cartoon.html
-#    name: 不会笑青年
-#    describe: 内心沉稳 ，放荡不羁。
-#
-#  -
-#    href: /life.html
-#    name: 我的故事
-#    describe: 生活就是故事，故事就是生活
+  -
+    href: /diary.html
+    name: 我的日记
+    describe: 心路旅程，慢慢诉说。
+  -
+    href: /life.html
+    name: 我的生活
+    describe: 可乐生活。
 #
 #  -
 #    href: /it.html
