@@ -1,20 +1,18 @@
 ---
 layout: page
-title: 你的生活和我一样吗
+title: 分享生活点滴
 titlebar: life
-subtitle: <span class="mega-octicon octicon-organization"></span>&nbsp;&nbsp; 你的生活有什么故事？
+subtitle: <span class="mega-octicon octicon-organization"></span>&nbsp;&nbsp; 人生在世，潇洒二字
 menu: life
 css: ['blog-page.css']
 permalink: /life
 ---
 
 <div class="row">
-
-    <div class="col-md-12">
-
+  <div class="col-md-12">
         <ul id="posts-list">
             {% for post in site.posts %}
-                {% if post.category=='life' %}
+                {% if post.category=='FastDFS' or post.keywords contains 'FastDFS' %}
                 <li class="posts-list-item">
                     <div class="posts-content">
                         <span class="posts-list-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
@@ -25,22 +23,17 @@ permalink: /life
                 {% endif %}
             {% endfor %}
         </ul> 
-
         <!-- Pagination -->
         {% include pagination.html %}
-
         <!-- Comments -->
        <div class="comment">
          {% include comments.html %}
        </div>
     </div>
-
 </div>
 <script>
-    $(document).ready(function(){
-
+    $(document).ready(function() {
         // Enable bootstrap tooltip
         $("body").tooltip({ selector: '[data-toggle=tooltip]' });
-
     });
 </script>
