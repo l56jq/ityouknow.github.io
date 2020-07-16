@@ -9,10 +9,12 @@ permalink: /life
 ---
 
 <div class="row">
-  <div class="col-md-12">
+
+    <div class="col-md-12">
+
         <ul id="posts-list">
             {% for post in site.posts %}
-                {% if post.category=='life' or post.keywords contains 'life' %}
+                {% if post.category=='life' %}
                 <li class="posts-list-item">
                     <div class="posts-content">
                         <span class="posts-list-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
@@ -23,17 +25,22 @@ permalink: /life
                 {% endif %}
             {% endfor %}
         </ul> 
+
         <!-- Pagination -->
         {% include pagination.html %}
+
         <!-- Comments -->
        <div class="comment">
          {% include comments.html %}
        </div>
     </div>
+
 </div>
 <script>
-    $(document).ready(function() {
+    $(document).ready(function(){
+
         // Enable bootstrap tooltip
         $("body").tooltip({ selector: '[data-toggle=tooltip]' });
+
     });
 </script>
