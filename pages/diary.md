@@ -12,7 +12,7 @@ permalink: /diary
     <div class="col-md-12">
         <ul id="posts-list">
             {% for post in site.posts %}
-                {% if post.category=='FastDFS' or post.keywords contains 'FastDFS' %}
+                {% if post.category=='diary' or post.keywords contains 'diary' %}
                 <li class="posts-list-item">
                     <div class="posts-content">
                         <span class="posts-list-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
