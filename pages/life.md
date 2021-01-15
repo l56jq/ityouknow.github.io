@@ -1,17 +1,11 @@
 ---
-layout: page
-title: 分享生活点滴
-titlebar: life
-subtitle: <span class="mega-octicon octicon-organization"></span>&nbsp;&nbsp; 人生在世，潇洒二字
-menu: life
-css: ['blog-page.css']
+layout: page title: 分享生活点滴 titlebar: life subtitle: <span class="mega-octicon octicon-organization"></span>&nbsp;&nbsp;
+人生在世，潇洒二字 menu: life css: ['blog-page.css']
 permalink: /life
 ---
 
 <div class="row">
-
     <div class="col-md-12">
-
         <ul id="posts-list">
             {% for post in site.posts %}
                 {% if post.category=='life' %}
@@ -24,23 +18,17 @@ permalink: /life
                 </li>
                 {% endif %}
             {% endfor %}
-        </ul> 
-
+        </ul>
         <!-- Pagination -->
         {% include pagination.html %}
-
         <!-- Comments -->
        <div class="comment">
          {% include comments.html %}
        </div>
     </div>
-
 </div>
 <script>
     $(document).ready(function(){
-
-        // Enable bootstrap tooltip
         $("body").tooltip({ selector: '[data-toggle=tooltip]' });
-
     });
 </script>

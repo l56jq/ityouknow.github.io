@@ -10,7 +10,6 @@ permalink: /archives.html
 
 <ul class="archives-list">
   {% for post in site.posts %}
-
     {% unless post.next %}
       <h3>{{ post.date | date: '%Y' }}</h3>
     {% else %}
@@ -20,7 +19,6 @@ permalink: /archives.html
         <h3>{{ post.date | date: '%Y' }}</h3>
       {% endif %}
     {% endunless %}
-
     <li><span>{{ post.date | date:'%m-%d' }}</span> <a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>

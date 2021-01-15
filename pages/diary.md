@@ -9,9 +9,7 @@ permalink: /diary
 ---
 
 <div class="row">
-
     <div class="col-md-12">
-
         <ul id="posts-list">
             {% for post in site.posts %}
                 {% if post.category=='diary' %}
@@ -24,23 +22,17 @@ permalink: /diary
                 </li>
                 {% endif %}
             {% endfor %}
-        </ul> 
-
+        </ul>
         <!-- Pagination -->
         {% include pagination.html %}
-
         <!-- Comments -->
        <div class="comment">
          {% include comments.html %}
        </div>
     </div>
-
 </div>
 <script>
     $(document).ready(function(){
-
-        // Enable bootstrap tooltip
         $("body").tooltip({ selector: '[data-toggle=tooltip]' });
-
     });
 </script>
