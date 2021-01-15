@@ -1,6 +1,10 @@
 ---
-layout: page title: 分享生活点滴 titlebar: life subtitle: <span class="mega-octicon octicon-organization"></span>&nbsp;&nbsp;
-人生在世，潇洒二字 menu: life css: ['blog-page.css']
+layout: page
+title: 分享生活点滴
+titlebar: life
+subtitle: <span class="mega-octicon octicon-organization"></span>&nbsp;&nbsp; 人生在世，潇洒二字
+menu: life
+css: ['blog-page.css']
 permalink: /life
 ---
 
